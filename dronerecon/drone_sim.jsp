@@ -2,11 +2,6 @@
   <head>
     
       <%
-        // ###############################
-        // Create two int variables -- iCols and iRows -- and fill them with params passed in called "colcount" and "rowcount".
-        // You'll have to convert those incoming strings to ints.
-        // ###############################
-        
         String sCols = request.getParameter("colcount");
         String sRows = request.getParameter("rowcount");
         int iCols = Integer.parseInt(sCols);
@@ -46,20 +41,12 @@
     <table style="width:100%;border-style:solid;
       text-align:center;vertical-align:middle;font-weight:bold;font-size:large">
 
-      <%
-      // ###############################
-      // Create first line of for loop here that loops iRows times.
-      // ###############################
-      
+      <% 
       for( int y = 0; y < iRows; y++){
       
           %>
           <tr>
           <%
-          // ###############################
-          // Create first line of for loop here that loops iCols times.
-          // ###############################
-          
           for( int x = 0; x < iCols; x++){
             %>
             
